@@ -42,4 +42,32 @@ function AddRentals({handleAdd}) {
     })
           
       }
+
+      return (
+        <div>
+        <nav className="cartNav" >
+             <WiDirectionLeft  size={28} className="back" onClick={() => navigate(-1)}/>
+             <p style={{fontStyle:"italic",fontSize:"3rem"}}>Find A Motel</p>
+         </nav>
+    
+        <form  className="signupform" style={{paddingTop:"6rem"}} onSubmit={handleSubmit}>
+        <label htmlFor="name"   value="name">Name:</label>
+        <input type="text" name="name" onChange={onchange}/><br/><br/>
+        <label htmlFor="description" value="email">Description: </label>
+        <textarea name="description" rows="3" cols="50" onChange={onchange}>
+        </textarea><br/><br/>
+        <label htmlFor="image" value="image">Image:</label>
+        <input type="text" name="image" onChange={onchange}/><br/><br/>
+        <label htmlFor="location" value="location">Location: </label>
+        <input type="text" name="location" onChange={onchange}/><br/><br/>
+        <label htmlFor="price" value="price" >Price:</label>
+        <input type="interger"  name="price" onChange={onchange}/><br/>
+        <input type="submit" className="delete" style={{marginTop:"2rem",padding:"15px",border:"none"}}   value="Add Rentals"/>
+      </form>
+      
+      </div>
+      )
+    }
+    
+    export default AddRentals;
   

@@ -67,7 +67,7 @@ if (rental.length===0){
         <div><Link to="/login">Logout</Link></div>
         <div><Link to={`/addrentals/${id}`} >Add Properties</Link></div>
 
-        <p style={{fontStyle:"italic",fontSize:"3rem"}}>Find A Motel</p>
+        <p style={{fontStyle:"italic",fontSize:"3rem"}}>Find An Apartment</p>
        </nav>
     
    

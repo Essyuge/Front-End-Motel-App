@@ -20,13 +20,13 @@ const {id}=useParams()
 useEffect(() => {
   updateRentals()
 
-}, [updateRentals, rentals])
+}, [rentals])
 
 
 
 
 function updateRentals(){ 
-  const rental = rentals.filter((rental)=>rental.id ===parseInt(id)).map(rental=>{
+  const rental=rentals.filter((rental)=>rental.id ===parseInt(id)).map(rental=>{
     setName(rental.name) 
     setDescription(rental.description)
     setImage(rental.image)

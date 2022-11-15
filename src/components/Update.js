@@ -111,4 +111,4 @@ function handleSubmit(e){
   )
 }
 
-export default Update
+export default Update;
